@@ -1,6 +1,7 @@
 package com.example.testme2;
 
 import android.app.Dialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
@@ -65,8 +66,11 @@ public class CategoriesActivity extends AppCompatActivity {
 
         final CategoriesAdapter categoriesAdapter = new CategoriesAdapter(list);
         recyclerView.setAdapter(categoriesAdapter);
+//  SharedPreferences to access master key
+        SharedPreferences masterKeySH = getSharedPreferences("masterKeySH", MODE_PRIVATE);
+        final String masterKey = masterKeySH.getString("masterKey", null);
 
-        reference.child("categories").addListenerForSingleValueEvent(new ValueEventListener() {
+        reference.child("masters").child(masterKey).child("categories").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot1 : snapshot.getChildren()){

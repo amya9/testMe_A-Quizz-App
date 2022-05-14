@@ -20,6 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.ViewCompat;
 
 import com.example.testme2.models.questionsModel;
 import com.google.android.gms.ads.AdRequest;
@@ -103,8 +104,11 @@ public class QuestionsActivity extends AppCompatActivity {
 
          list = new ArrayList<>();
         loadingDialog.show();
+//  SharedPreferences to access master key
+        SharedPreferences masterKeySH = getSharedPreferences("masterKeySH", MODE_PRIVATE);
+        final String masterKey = masterKeySH.getString("masterKey", null);
 
-        reference.child("SETS").child(setId).addListenerForSingleValueEvent(new ValueEventListener() {
+        reference.child("masters").child(masterKey).child("sets").child(setId).addListenerForSingleValueEvent(new ValueEventListener() {
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -193,7 +197,8 @@ public class QuestionsActivity extends AppCompatActivity {
     private void playAnime(final View view , final int value , final String data){
         for (int i = 0; i < 4; i++) {
             optionsContainer.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#989898")));
-//            optionsContainer.getChildAt(i).setBackgroundColor();
+//            optionsContainer.getChildAt(i).setBackgroundResource(R.color.defaultOptionColor);
+            optionsContainer.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FFFFFF")));
         }
 
         view.animate().alpha(value).scaleX(value).scaleY(value).setDuration(500).setStartDelay(100)
@@ -261,14 +266,16 @@ public class QuestionsActivity extends AppCompatActivity {
             SCORE++;
             selectedOption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#4CAF50")));
 //            selectedOption.setBackgroundColor(Color.parseColor("#4CAF50"));
+            selectedOption.setBackgroundResource(R.color.correctColor);
 
         }else{
             //incorrect answer
             selectedOption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FF0000")));
 //            selectedOption.setBackgroundColor(Color.parseColor("#FF0000"));
+            selectedOption.setBackgroundResource(R.color.inCorrectColor);
             //show correct answer
-//            Button correctOption = (Button) optionsContainer.findViewWithTag(list.get(position).getCorrectAnswer());
-//            ViewCompat.setBackgroundTintList(correctOption , ColorStateList.valueOf(Color.parseColor("#4CAF50")));
+            Button correctOption = (Button) optionsContainer.findViewWithTag(list.get(position).getCorrectAnswer());
+            ViewCompat.setBackgroundTintList(correctOption , ColorStateList.valueOf(Color.parseColor("#4CAF50")));
         }
     }
 
@@ -277,7 +284,9 @@ public class QuestionsActivity extends AppCompatActivity {
         for(int i =0 ;i<4 ;i++){
             optionsContainer.getChildAt(i).setEnabled(enable);
             if (enable){
-                optionsContainer.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#989898")));
+//                optionsContainer.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#989898")));
+//                optionsContainer.getChildAt(i).setBackgroundColor(Color.parseColor("#DBDBDB"));
+                optionsContainer.getChildAt(i).setBackgroundResource(R.color.defaultOptionColor);
             }
         }
     }
