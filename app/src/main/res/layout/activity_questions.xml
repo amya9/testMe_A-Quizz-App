@@ -90,7 +90,7 @@
             android:textColor="@android:color/black"
             android:background="@drawable/questions_rc"
             android:backgroundTint="#989898"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button5"
@@ -100,7 +100,7 @@
             android:layout_margin="8dp"
             android:background="@drawable/questions_rc"
             android:backgroundTint="#989898"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button4"
@@ -110,7 +110,7 @@
             android:textColor="@android:color/black"
             android:background="@drawable/questions_rc"
             android:backgroundTint="#989898"
-            android:text="Button" />
+            android:text="" />
 
         <Button
             android:id="@+id/button3"
@@ -120,7 +120,7 @@
             android:textColor="@android:color/black"
             android:background="@drawable/questions_rc"
             android:backgroundTint="#989898"
-            android:text="Button" />
+            android:text="" />
     </LinearLayout>
 
     <Button
@@ -175,6 +175,7 @@
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

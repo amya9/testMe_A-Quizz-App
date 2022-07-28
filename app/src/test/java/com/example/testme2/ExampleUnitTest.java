@@ -1,4 +1,4 @@
-package com.example.testme2;
+package com.amyaglobal.testme2;
 
 import org.junit.Test;
 

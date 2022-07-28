@@ -5,4 +5,8 @@
     <color name="colorPrimaryDark">#00B4FF</color>
     <color name="colorAccent">#FFFFFF</color>
     <color name="bookmarkColor">#55DE94</color>
+    <color name="correctColor">#4CAF50</color>
+    <color name="inCorrectColor">#CF0000</color>
+    <color name="defaultOptionColor">#DFDFDF</color>
+
 </resources>

@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:615107623129:android:146671798f2c8bd5c8a6c8",
         "android_client_info": {
-          "package_name": "com.example.testme2"
+          "package_name": "com.amyaglobal.testme2"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "615107623129-bdgrrto3eba5scst70avonpel9e02ph5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.testme2",
+            "package_name": "com.amyaglobal.testme2",
             "certificate_hash": "ba736f049b012acade336fe4b982fd28a6ba384c"
           }
         },

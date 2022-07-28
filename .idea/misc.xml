@@ -3,8 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/drawable-hdpi/button_rc.xml" value="0.26614583333333336" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/drawable-hdpi/edittext_rc.xml" value="0.26614583333333336" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/drawable/rounded_corner.xml" value="0.26614583333333336" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout-v21/master_item.xml" value="0.25" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/activity_bookmarks.xml" value="0.1234375" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/activity_categories.xml" value="0.25" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/activity_master.xml" value="0.264" />
         <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/activity_questions.xml" value="0.25" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/auth_activity.xml" value="0.2" />
         <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/boobkmark_item.xml" value="0.25" />
+        <entry key="..\:/ANDROID/PROJECT/testMe2/app/src/main/res/layout/loading.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout-v21/master_item.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_bookmarks.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_categories.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_master.xml" value="0.221875" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_questions.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_score.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/activity_sets.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/auth_activity.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/boobkmark_item.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/categories_item.xml" value="0.25" />
+        <entry key="..\:/final_testme_master_level/playstore_upload_version_1/testMe2/app/src/main/res/layout/sets_item.xml" value="0.25" />
       </map>
     </option>
   </component>
